@@ -4,5 +4,5 @@ if [ $? -eq 0 ]; then
   export http_proxy=${http_proxy:='http://us-auto.proxy.lexmark.com:8080'}
   export no_proxy=${no_proxy:='localhost,127.0.0.1,*.lexmark.com,*.local'}
   export bower_proxy=${bower_proxy:='http://us-auto.proxy.lexmark.com:8080'}
-  export bower_https_proxy=${bower_https_proxy:='false'}
+  export bower_https_proxy=${bower_https_proxy:=''}
 fi
