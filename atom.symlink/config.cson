@@ -1,35 +1,53 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  editor:
+    showIndentGuide: true
+    fontFamily: "Menlo"
+    fontSize: 15
+    invisibles: {}
+    scrollPastEnd: true
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      ".codekit-cache"
+      "bower_components"
+      "node_modules"
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
+    hideGitIgnoredFiles: true
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "linter-jsonlint"
+      "linter-xmllint"
     ]
-    'hideGitIgnoredFiles': true
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  linter: {}
+  "linter-phpcs":
+    executablePath: "/Users/hputman/Documents/Volunteerical/base3/vendor/bin/phpcs"
+    codeStandardOrConfigFile: "CakePHP"
+    warningSeverity: 0
+    tabWidth: 4
+    ignore: "*.blade.php,*.twig.php"
+  "markdown-preview": {}
