@@ -26,7 +26,6 @@
       "background-tips"
       "exception-reporting"
       "metrics"
-      "linter-jsonlint"
       "linter-xmllint"
     ]
     themes: [
@@ -43,11 +42,12 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
-  linter: {}
+  linter:
+    errorPanelHeight: 78
   "linter-phpcs":
-    executablePath: "/Users/hputman/Documents/Volunteerical/base3/vendor/bin/phpcs"
-    codeStandardOrConfigFile: "CakePHP"
+    executablePath: "/usr/local/bin/phpcs"
     warningSeverity: 0
     tabWidth: 4
-    ignore: "*.blade.php,*.twig.php"
   "markdown-preview": {}
+  wordcount:
+    noextension: true
