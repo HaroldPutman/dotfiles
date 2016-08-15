@@ -1,11 +1,12 @@
 "*":
-  editor:
-    showIndentGuide: true
-    fontFamily: "Menlo"
-    fontSize: 15
-    invisibles: {}
-    scrollPastEnd: true
   core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+    ]
+    followSymlinks: false
+    hideGitIgnoredFiles: true
     ignoredNames: [
       ".bundle"
       ".git"
@@ -13,41 +14,26 @@
       "repositories"
       "tmp"
       "vendor"
-      ".hg"
-      ".svn"
-      ".DS_Store"
-      "Thumbs.db"
-      ".codekit-cache"
-      "bower_components"
-      "node_modules"
-    ]
-    hideGitIgnoredFiles: true
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "linter-xmllint"
     ]
     themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
+      "unity-ui"
+      "glacier-syntax"
     ]
+  editor:
+    fontFamily: "Menlo"
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+  "go-plus":
+    goPath: "/Users/holman/Code/go"
+  "release-notes":
+    viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
+      "text.html.basic"
     ]
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  linter:
-    errorPanelHeight: 78
-  "linter-phpcs":
-    executablePath: "/usr/local/bin/phpcs"
-    warningSeverity: 0
-    tabWidth: 4
-  "markdown-preview": {}
-  wordcount:
-    noextension: true
