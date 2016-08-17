@@ -33,3 +33,6 @@ cask 'vlc'
 
 tap 'caskroom/versions'
 cask 'firefoxdeveloperedition'
+
+cask 'java'
+brew 'ant'
