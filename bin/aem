@@ -4,4 +4,4 @@
 # Starts up Adobe Experience Manager locally
 
 cd ~/Applications/AEM
-java -Xmx1024m -XX:MaxPermSize=256M -jar "aem-quickstart-5.6.1.jar"
+java -Xmx1024m -XX:MaxPermSize=256M -jar "aem6.1-author-p4502.jar"
