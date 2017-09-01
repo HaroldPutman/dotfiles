@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "dff134ba-16ff-4fd4-8435-bdc43bda8d23"
   core:
     disabledPackages: [
       "background-tips"
@@ -17,15 +20,23 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
+    fontFamily: "Fira Code"
+    fontSize: 18
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "go-plus":
     panelDisplayMode: "closed"
   "linter-eslint":
+    globalNodePath: "/usr/local"
+    lintHtmlFiles: true
     useGlobalEslint: true
+  "linter-ui-default":
+    panelHeight: 69
+  "platformio-ide-terminal":
+    core:
+      shell: "/usr/local/bin/zsh"
+    style: {}
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
@@ -38,8 +49,19 @@
       "text.git-commit"
       "text.html.basic"
     ]
+  tasks:
+    baseMarker: "-"
+  "terminal-plus":
+    core:
+      autoRunCommand: "pwd"
+      shell: "/usr/local/bin/zsh"
+  "tree-view": {}
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
 ".js.jsx.react.source":
   editor:
     autoIndent: true
