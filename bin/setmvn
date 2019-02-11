@@ -1,0 +1,24 @@
+#!/bin/bash
+
+[ "$#" -lt 2 ] || {
+    echo "Usage: $(basename $0) [profile-name]" >&2
+    exit 1
+}
+
+if [ -z "$1" ] ; then
+    if [ -f ~/.m2/settings.xml ] ; then
+        echo "Configuration removed."
+        rm -f ~/.m2/settings.xml
+    else
+        echo "Configuration not in place, nothing to do." >&2
+    fi
+else
+    if [ -f ~/.m2/"settings.$1.xml" ] ; then
+        [ -f ~/.m2/settings.xml ] && rm -f ~/.m2/settings.xml
+        ln -s ~/.m2/"settings.$1.xml" ~/.m2/settings.xml
+        echo "Configuration set to $1."
+    else
+        echo "Configuration not found: $1" >&2
+        exit 2
+    fi
+fi
