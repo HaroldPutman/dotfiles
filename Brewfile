@@ -12,7 +12,6 @@ brew 'jq'
 brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'openssl'
-brew 'node'
 brew 'readline'
 brew 'postgresql'
 brew 'puma/puma/puma-dev'
@@ -24,8 +23,9 @@ brew 'spaceman-diff'
 brew 'spark'
 brew 'unrar'
 brew 'wget'
-brew 'yarn'
+brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
+brew 'jenv'
 
 cask 'atom'
 cask 'google-chrome'
@@ -40,6 +40,4 @@ cask 'cyberduck'
 tap 'caskroom/versions'
 cask 'firefoxdeveloperedition'
 
-cask 'java'
-cask 'java7'
-brew 'ant'
+
