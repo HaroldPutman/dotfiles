@@ -7,6 +7,7 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "linter-phpcs"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -19,20 +20,37 @@
       "vendor"
     ]
     telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
   editor:
     fontFamily: "Fira Code"
-    fontSize: 18
+    fontSize: 21
     invisibles: {}
     showIndentGuide: true
+    showInvisibles: true
     softWrapAtPreferredLineLength: true
   "go-plus":
     panelDisplayMode: "closed"
+  "linter-checkstyle":
+    checkConfiguration: "/Users/haputman/Projects/aem-lexmark/checkstyle.xml"
+    lintOnlyCurrentFile: true
   "linter-eslint":
-    globalNodePath: "/usr/local"
+    advanced:
+      localNodeModules: "/Users/haputman/.nvm/versions/node/v10.10.0/lib/node_modules"
+    disabling:
+      rulesToSilenceWhileTyping: [
+        "no-trailing-spaces"
+      ]
+    global:
+      globalNodePath: "/Users/haputman/.nvm/versions/node/v10.10.0"
     lintHtmlFiles: true
-    useGlobalEslint: true
+  "linter-phpcs":
+    disableWhenNoConfigFile: true
   "linter-ui-default":
-    panelHeight: 69
+    showPanel: true
+  "one-dark-ui": {}
   "platformio-ide-terminal":
     core:
       shell: "/usr/local/bin/zsh"
